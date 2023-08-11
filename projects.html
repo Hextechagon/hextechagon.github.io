@@ -6,13 +6,13 @@ title: "Projects"
 {%- assign posts = paginator.projects | default: site.projects -%}
 {% for post in posts %}
   <article>
-    {% include meta.html post=post preview=false %}
-    {{ post.excerpt }}
     {% if loop.index == 1 %}
       <a href="https://github.com/Hextechagon/Draft-League-Bot">Github Link</a>
     {% else %}
       <p>This project is in a private repository since it's from a course, please email me if you wish to view it.</p>
     {% endif %}
+    {% include meta.html post=post preview=false %}
+    {{ post.excerpt }}
   </article>
 {% endfor %}
 
