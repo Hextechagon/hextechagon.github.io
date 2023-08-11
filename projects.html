@@ -4,9 +4,7 @@ title: "Projects"
 ---
 
 {%- assign posts = paginator.projects | default: site.projects -%}
-{% set counter = 0 %}
 {% for post in posts %}
-  {% set counter = counter + 1 %}
   <article>
     {% include meta.html post=post preview=false %}
     {{ post.excerpt }}
