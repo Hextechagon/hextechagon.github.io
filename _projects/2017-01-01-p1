@@ -1,7 +1,6 @@
 ---
 title: "Draft League Bot | Python, discord.py, SQL"
 layout: post
-url: "https://github.com/Hextechagon/Draft-League-Bot"
 ---  
   
 This Discord bot automates more than 90% of Pokémon draft league operations, significantly increasing the efficiency of draft leagues and reducing the workload of organizers. It also contains a recovery system to handle crashes and updates. While the recovery system required some data to be saved to the disk, I optimized the speed of commands by prioritizing in-memory operations. The bot is currently used by 3 draft leagues in a Discord server with over 100 members.

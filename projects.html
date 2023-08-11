@@ -8,7 +8,12 @@ title: "Projects"
   <article>
     {% include meta.html post=post preview=false %}
     {{ post.excerpt }}
-    <a href="{{ post.url | relative_url }}">Github Link</a>
+    {% if loop.index == 1 %}
+      <a href="https://github.com/Hextechagon/Draft-League-Bot">Github Link</a>
+    <!--{% elif loop.index == 2 %}-->
+    {% else %}
+      <p>This project is in a private repository since it's from a course, please email me if you wish to view it. </p>
+    {% endif %}
   </article>
 {% endfor %}
 
