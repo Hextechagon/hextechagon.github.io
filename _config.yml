@@ -5,6 +5,9 @@ permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"
+link1: "https://github.com/Hextechagon/Draft-League-Bot"
+link2:
+link3: 0
 
 # Layout
 

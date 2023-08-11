@@ -7,8 +7,8 @@ title: "Projects"
 {% for post in posts %}
   <article>
     {% include meta.html post=post preview=false %}
-    <a href="https://github.com/Hextechagon/Draft-League-Bot">Link Text</a>
     {{ post.excerpt }}
+    <a href={{ post.url }}>Github Link</a>
   </article>
 {% endfor %}
 
