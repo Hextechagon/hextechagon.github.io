@@ -7,11 +7,6 @@ title: "Projects"
 {% set counter = 0 %}
 {% for post in posts %}
   {% set counter = counter + 1 %}
-  {% if counter == 1 %}
-      <a href="https://github.com/Hextechagon/Draft-League-Bot">Github Link</a>
-  {% else %}
-      <p>This project is in a private repository since it's from a course, please email me if you wish to view it.</p>
-  {% endif %}
   <article>
     {% include meta.html post=post preview=false %}
     {{ post.excerpt }}
