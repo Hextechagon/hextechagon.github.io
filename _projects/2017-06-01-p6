@@ -1,7 +1,6 @@
 ---
-title:  "Project 6 (Tech Stack)"
+title:  "Log Manager | C++"
 layout: post
 ---
 
-Project Description. This project is in a private repository since it's from a course, please email me if you wish to view it.
-
+This project enhances the management of log files. It enabled users to perform searches (timestamps, keyword, etc.) on a log file and analyze the content in an excerpt list. The log file content is optimally stored in various data structures to support efficient searching. This project is in a private repository since it's from a course, please email me if you wish to view it.

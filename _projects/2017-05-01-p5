@@ -1,7 +1,7 @@
 ---
-title:  "Project 5 (Tech Stack)"
+title:  "Zookeeper | C++"
 layout: post
 ---
 
-Project Description. This project is in a private repository since it's from a course, please email me if you wish to view it.
-
+This project used Prim’s algorithm to minimize the distance of the path that a zookeeper has to take to traverse every cage to feed the animals in a zoo. It
+solved the traveling salesman problem for the underground water canal system beneath the cages efficiently using branch and bound. This project is in a private repository since it's from a course, please email me if you wish to view it.
