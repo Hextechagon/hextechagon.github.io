@@ -7,6 +7,7 @@ title: "Projects"
 {% for post in posts %}
   <article>
     {% include meta.html post=post preview=false %}
+    <a href="{{ page.url }}">Github Link</a>
     {{ post.excerpt }}
   </article>
 {% endfor %}
