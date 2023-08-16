@@ -1,7 +1,6 @@
 ---
-title:  "Computer Vision | C++"
+title:  "Client-side Dynamic Pages | Python, Flask, SQL, HTML, CSS, React"
 layout: post
 ---
 
-This project implements a seam carving algorithm for content-aware image resizing, producing non-distorted results even if the image
-aspect ratio changes. This project is in a private repository since it's from a course, please email me if you wish to view it.
+This project...
