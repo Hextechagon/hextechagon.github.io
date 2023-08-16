@@ -3,5 +3,5 @@ title:  "Computer Vision | C++"
 layout: post
 ---
 
-This project implements a seam carving algorithm for content-aware image resizing, producing non-distorted results even if the image
+For this project, I implemented a seam carving algorithm for content-aware image resizing, producing non-distorted results even if the image
 aspect ratio changes. This project is in a private repository since it's from a course, please email me if you wish to view it.
