@@ -23,7 +23,7 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "projects.html", title: "Projects"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:mwang0401@gmail.com"}
+  - {title: Mail, icon: envelope, url: "mailto:mattwang@umich.edu"}
   - {title: Github, icon: github, url: "https://github.com/hextechagon/"}
   - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/mattwang8/"}
 
