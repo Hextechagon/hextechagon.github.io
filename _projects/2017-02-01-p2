@@ -3,4 +3,4 @@ title:  "Disk Scheduler | C++"
 layout: post
 ---
 
-For this project, I . This project is in a private repository since it's a course project, but it is available upon request.
+For this project, I implemented a concurrent program that schedules disk requests in shortest seek time first order. This project is in a private repository since it's a course project, but it is available upon request.
