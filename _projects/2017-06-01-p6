@@ -1,7 +1,7 @@
 ---
-title:  "Xiangqi (Chinese Chess) | C++, Dear ImGui"
+title: "Search Engine | Python, Flask, SQL, Hadoop, HTML, CSS"
 layout: post
 ---
 
-My family and I enjoy the game of Xiangqi greatly, playing together whenever we have spare time on our hands. Drawing inspiration from our common interest, I created this two-player Xiangqi game. The board is rotated every turn to provide each player with a smooth first person experience using only one screen.
-The user interface appears clean and robust, higlighting and color-coding all possible moves for each selected piece as well as checkmates. It also has a replay system that enables players to review their matches, complete with forward and backward navigation. This project is in a private repository since I am currently refactoring the code to use SFML instead of Dear ImGui, and will become available again upon completion.
+For this project, my group constructed a scalable search engine similar to Google or Bing. We created a segmented inverted index of web pages using a pipeline of MapReduce programs executed with Hadoop. REST API index servers were built to return JSON formatted hits and the corresponding scores, calculated using a combination of
+tf-idf text analysis and PageRank link analysis. Finally, a search server with a scalable user interface returns top search results using server-side dynamic pages, making REST API requests to each index server in parallel threads. This project is in a private repository since it's a course project, but it is available upon request.
