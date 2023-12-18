@@ -1,0 +1,7 @@
+---
+title:  "Computer Vision | C++"
+layout: post
+---
+
+For this project, I implemented a seam carving algorithm for content-aware image resizing, producing non-distorted results even if the image
+aspect ratio changes. The input image was stored as a struct consisting of 3 matrices, containing the red, green, and blue pixel values of the image respectively. The algorithm then finds and removes a vertical seam that passes through the pixels with the lowest total energy (least important). For height changes, the algorithm rotates the image to process it. This project is in a private repository since it's a course project, but it is available upon request.

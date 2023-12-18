@@ -1,6 +1,6 @@
 ---
-title:  "Log Manager | C++"
+title:  "Thread Library | C++"
 layout: post
 ---
 
-For this project, I implemented a log file manager that enables users to perform timestamp, category, and keyword searches on log files and construct an excerpt list of important results. Optimization for speed was achieved through the use of multiple interacting data structures tailored for major operations, including vector, deque, and unordered map; in addition, the project heavily utilized STL functions for their efficiency. It also included various functions to manipulate the excerpt list for better analysis by users. This project is in a private repository since it's from a course, please email me if you wish to view it.
+For this project, This project is in a private repository since it's a course project, but it is available upon request.
