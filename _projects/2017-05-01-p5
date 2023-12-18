@@ -3,4 +3,4 @@ title:  "Network File Server | C++"
 layout: post
 ---
 
-For this project, This project is in a private repository since it's a course project, but it is available upon request.
+For this project, my group built a multi-threaded network file server with fine-grained locking, socket programming, client-server systems, and network protocols. This project is in a private repository since it's a course project, but it is available upon request.
