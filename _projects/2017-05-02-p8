@@ -1,0 +1,6 @@
+---
+title:  "Sharded Key-Value Server | Go"
+layout: post
+---
+
+For this project, I designed a sharded key-value database scaling to thousands of servers by partitioning keys across replica groups. It uses Paxos for shard replication and a shard master for configuration management. It also includes a reconfiguration protocol to ensure single-copy semantics during concurrent operations and shard transfers between groups. This project is in a private repository since it's a course project, but it is available upon request.
