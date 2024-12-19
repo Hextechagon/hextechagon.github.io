@@ -5,7 +5,7 @@ permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"
-link1: "https://github.com/Hextechagon/Draft-League-Bot"
+#link1: "https://github.com/Hextechagon/Draft-League-Bot"
 link2:
 link3: 0
 
@@ -24,7 +24,7 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:mattwang@umich.edu"}
-  - {title: Github, icon: github, url: "https://github.com/hextechagon/"}
+  #- {title: Github, icon: github, url: "https://github.com/hextechagon/"}
   - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/mattwang8/"}
 
 comments:
