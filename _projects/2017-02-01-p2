@@ -1,6 +1,0 @@
----
-title:  "Xiangqi (Chinese Chess) | C++, Dear ImGui"
-layout: post
----
-
-My family and I enjoy the game of Xiangqi greatly, playing together whenever we have free time on our hands. Drawing inspiration from our common interest, I created this two-player Xiangqi game. In addition to its core functionalities, the user interface highlights all possible moves for each selected piece and color codes situations such as checkmates. It also has a replay system that enables players to review their matches, complete with forward and backward navigation.
