@@ -1,6 +1,6 @@
 ---
-title: "Draft League Bot | Python, discord.py, SQL"
+title:  "Network File Server | C++"
 layout: post
----  
-  
-I have participated in many Pokémon draft leagues. Something I noticed is that many processes require the constant presence of draft hosts (organizers), whether it be updating Excel documents or moderating on Discord. Since this is often not possible, delays occur frequently. To address the problem, I created a Discord bot linked to a database to automate more than 90% of draft league operations. The bot also enabled easier access to draft league data through simple commands instead of having to search for the data on Excel sheets. To prevent loss of data from server crashes, I implemented a recovery system using database shadowing. The bot currently has over 200 users across different draft leagues. It increased the efficiency of the draft leagues by 60% and reduced the workload of hosters by 80%.
+---
+
+For this project, my group built a multi-threaded network file server that provides a hierarchical file system using fine-grained locking, socket programming, client-server systems, and network protocols. This project is in a private repository since it's a course project, but it is available upon request.
