@@ -3,4 +3,4 @@ title:  "Disk Scheduler | C++"
 layout: post
 ---
 
-For this project, I implemented a concurrent program that schedules disk requests in shortest seek time first order.
+I developed a concurrent program that issues and services disk requests, utilizing mutexes and condition variables. It consists of a servicer thread and multiple requester threads, which enqueue disk requests. The disk queue has a maximum size, and requester threads must wait if the queue is full. The servicer processes requests in Shortest Seek Time First order, selecting the closest track to minimize seek time. To maximize scheduling efficiency, the queue was kept as full as possible.

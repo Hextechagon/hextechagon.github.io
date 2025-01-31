@@ -1,7 +1,6 @@
 ---
-title: "Search Engine | Python, Flask, SQL, Hadoop, HTML, CSS"
+title: "Search Engine | Python, Flask, SQL, Apache Hadoop, HTML, CSS"
 layout: post
 ---
 
-For this project, I constructed a scalable search engine similar to Google or Bing. We created a segmented inverted index of web pages using a pipeline of MapReduce programs executed with Hadoop. REST API index servers were built to return JSON formatted hits and the corresponding scores, calculated using a combination of
-tf-idf text analysis and PageRank link analysis. Finally, a search server with a scalable user interface returns top search results using server-side dynamic pages, making REST API requests to each index server in parallel threads.
+I constructed a scalable search engine similar to Google or Bing. First, I created a segmented inverted index of web pages using a pipeline of MapReduce programs executed with Hadoop. I then built 3 REST API index servers to return ranked search results in JSON format, calculated using a weighted combination of tf-idf text analysis and PageRank link analysis. Finally, I created a search server with a user interface that returns top search results by making API requests to index servers in parallel threads and combining them.
