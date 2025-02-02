@@ -3,4 +3,4 @@ title:  "Sharded Key-Value Server | Go"
 layout: post
 ---
 
-I built a sharded fault-tolerant key-value database scaling to thousands of servers with a set of replica groups using Paxos for shard replication and a shard master for configuration management.
+I built a sharded fault-tolerant key-value database with a set of replica groups and a configuration service (shard master). Each replica groups consists of a handful of servers that use Paxos to replicate the shards assigned to it. The shard master also uses Paxos for replication, and it manages shard assignment to replica groups as well as shard lookups. Additionally, it can change the assignment of keys to shards in response to changing load. The database performs operations in parallel on different shards, supporting applications that put a high load on the system.

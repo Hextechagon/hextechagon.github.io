@@ -1,6 +1,6 @@
 ---
-title:  "Disk Scheduler | C++"
+title: "Search Engine | Python, Flask, SQL, Apache Hadoop, HTML, CSS"
 layout: post
 ---
 
-I developed a concurrent program that issues and services disk requests, utilizing mutexes and condition variables. It consists of a servicer thread and multiple requester threads, which enqueue disk requests. The disk queue has a maximum size, and requester threads must wait if the queue is full. The servicer processes requests in Shortest Seek Time First order, selecting the closest track to minimize seek time. To maximize scheduling efficiency, the queue was kept as full as possible.
+I constructed a scalable search engine similar to Google or Bing. First, I created a segmented inverted index of web pages using a pipeline of MapReduce programs executed with Hadoop. I then built 3 REST API index servers to return search results in JSON format, ranked using a weighted combination of tf-idf text analysis and PageRank link analysis. Finally, I created a search server with a user interface that returns top search results by making API requests to index servers in parallel threads and combining the results.
