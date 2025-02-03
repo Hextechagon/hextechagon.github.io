@@ -3,4 +3,4 @@ title:  "Virtual Memory Manager | C++"
 layout: post
 ---
 
-For this project, I created a virtual memory manager that supports swap-backed and file-backed pages. The pager interface maintains processes' address spaces, enabling syscalls, forking of child processes with a non-empty virtual arena, creation of customizable memory sizes with a clock queue that controls eviction ordering, and control of enable bits to dictate read and write permissions as well as the residency of a given physical page.
+I created a pager supporting both swap-backed and file-backed pages to manage application processes' virtual address spaces. The pager provides system calls that applications can use to create, copy, and destroy address spaces, allocate space in an existing address space, and switch between address spaces.   It uses a clock queue for page eviction. It also implements copy-on-write for efficient memory duplication, deferring actual data copying until a process writes to a shared page. A zero page is pinned in memory to optimize performance, reducing faultsby mapping a new swap-backed pages to pre-zeroed memory when possible. 

@@ -3,4 +3,4 @@ title:  "Network File Server | C++"
 layout: post
 ---
 
-For this project, I built a multi-threaded network file server that provides a hierarchical file system using fine-grained locking, socket programming, client-server systems, and network protocols.
+I built a multi-threaded network file server that provides a hierarchical file system using fine-grained locking, socket programming, client-server systems, and network protocols.
