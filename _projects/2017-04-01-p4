@@ -3,4 +3,4 @@ title:  "Thread Library | C++"
 layout: post
 ---
 
-I developed a thread Library to manage the creation, lifetime, and execution of various thread bodies on a multi-core system. It contains advanced functionalities such as mutexes, conditional variables, generic threads, inner process interrupt capabilities, and thread lifetime management operations (yield and join).
+I built a thread library to manage the creation, lifetime, and execution of concurrent threads on a multi-core system. It provides threads (including yield and join operations), mutexes, conditional variables, and inter-processor interrupts. The library enforces FIFO scheduling order for all thread operations, including the ready queue, mutex wait queue, condition variable wait queue, and thread join queue.
