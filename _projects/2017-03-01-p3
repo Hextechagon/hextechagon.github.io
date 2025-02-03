@@ -1,6 +1,6 @@
 ---
-title:  "Thread Library | C++"
+title:  "Virtual Memory Manager | C++"
 layout: post
 ---
 
-I developed a thread Library to manage the creation, lifetime, and execution of various thread bodies on a multi-core system. It contains advanced functionalities such as mutexes, conditional variables, generic threads, inner process interrupt capabilities, and thread lifetime management operations (yield and join).
+I created a pager supporting both swap-backed and file-backed pages to manage application processes' virtual address spaces. The pager provides system calls that applications can use to create, copy, and destroy address spaces, allocate space in an existing address space, and switch between address spaces. It also has a page fault handler that resolves access violations. To minimize overhead, the pager avoids and defers work whenever possible. It utilizes copy-on-write sharing to delay memory duplication, Second Chance (Clock) Page Replacement algorithm for efficient page eviction, and pinning memory to reduce page faults.

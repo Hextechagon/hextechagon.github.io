@@ -1,6 +1,6 @@
 ---
-title:  "Disk Scheduler | C++"
+title:  "Sharded Key-Value Server | Go"
 layout: post
 ---
 
-I developed a concurrent program that issues and services disk requests, utilizing mutexes and condition variables for synchronization. It consists of a servicer thread and multiple requester threads. Each requester thread synchronously issues requests for disk tracks and inserts them into a shared disk queue. The disk queue has a maximum size, so requester threads must wait if the queue is full. The servicer services requests in Shortest Seek Time First order, selecting the request closest to its current track to minimize seek time.
+I built a sharded fault-tolerant key-value database with a set of replica groups and a configuration service (shard master). Each replica groups consists of a handful of servers that use Paxos to replicate the shards assigned to it. The shard master also uses Paxos for replication, and it manages shard assignment to replica groups as well as shard lookups. Additionally, it can change the assignment of keys to shards in response to changing load. The database can perform Put/Get operations in parallel on different shards, enabling it to support applications that put a high load on the system.
