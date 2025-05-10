@@ -1,6 +1,6 @@
 ---
-title: "Draft League Bot | Python, discord.py, SQL"
+title: "Search Engine | Python, Flask, SQL, Apache Hadoop, HTML, CSS"
 layout: post
----  
-  
-I have participated in many Pokémon draft leagues. Something I noticed is that many processes require constant attention from draft hosts (organizers), such as updating Excel documents and monitoring draft timers. Since constant availability is often not possible, delays occur frequently. To address the problem, I created a Discord bot and migrated data from Excel to a database. The bot automated more than 90% of draft league operations, from drafting to bracket creation and scheduling. It automatically logs match statistics and enables easier access to draft league data through simple commands. The bot currently has over 250 users across different draft leagues. It increased the efficiency of the draft leagues by 60% and reduced the workload of hosters by 80%.
+---
+
+I constructed a scalable search engine similar to Google or Bing. First, I created a segmented inverted index of web pages using a pipeline of MapReduce programs executed with Hadoop. I then built 3 REST API index servers to return search results in JSON format, ranked using a weighted combination of tf-idf text analysis and PageRank link analysis. Finally, I created a search server with a user interface that returns top search results by making API requests to index servers in parallel threads and combining the results.

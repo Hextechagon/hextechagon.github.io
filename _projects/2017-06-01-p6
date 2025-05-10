@@ -1,6 +1,6 @@
 ---
-title: "Search Engine | Python, Flask, SQL, Apache Hadoop, HTML, CSS"
+title: "Primary-Backup Key-Value Service | Go"
 layout: post
 ---
 
-I constructed a scalable search engine similar to Google or Bing. First, I created a segmented inverted index of web pages using a pipeline of MapReduce programs executed with Hadoop. I then built 3 REST API index servers to return search results in JSON format, ranked using a weighted combination of tf-idf text analysis and PageRank link analysis. Finally, I created a search server with a user interface that returns top search results by making API requests to index servers in parallel threads and combining the results.
+I implemented a fault-tolerant key-value store by replicating data over a primary and backup server, using a view service to coordinate server roles, monitor liveness via periodic heartbeat pings, and manage view transitions during failures and restarts. The primary handles all client requests and forwards updates to the backup, ensuring the backup is ready to take over if necessary. When a new backup is selected, the primary transfers the complete key-value state to it. Servers detect role changes by periodically pinging the view service, and provide at-most-once semantics by tracking client IDs and sequence numbers for each request.
